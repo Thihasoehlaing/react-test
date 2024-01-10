@@ -139,11 +139,11 @@ const App = () => {
                       </div>
                     }
                     {
-                      showGames && showGames.length > 0 && isNew(showGame.categories) && 
+                      showGame?.categories && showGame?.categories.length > 0 && isNew(showGame.categories) && 
                       <img src={newImg} className='absolute -top-[11px] -right-[12px] w-[80px] z-10' />
                     }
                     {
-                      showGames && showGames.length > 0 && isTop(showGame.categories) && 
+                      showGame?.categories && showGame?.categories.length > 0 && isTop(showGame.categories) && 
                       <img src={topImg} className='absolute -bottom-[5px] w-[100px] z-10' />
                     }
                     <div className='relative'>
