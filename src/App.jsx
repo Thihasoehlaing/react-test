@@ -51,7 +51,7 @@ const App = () => {
 
   useEffect(() => {
     filterGamesByCategory(selectedCategory)
-  }, [games, selectedCategory])
+  }, [games, selectedCategory, jackposts])
 
   const handleCategory = (value) => {
     setCategory(value)
@@ -133,7 +133,7 @@ const App = () => {
                     className='w-full relative z-20'
                   >
                     {
-                      showGame.jackpotAmount > 0 && 
+                      showGame?.jackpotAmount > 0 && 
                       <div className='w-full absolute top-0 text-center text-white bg-[#80808040] rounded-t-xl z-10 py-1'>
                         {formatCurrency(showGame?.jackpotAmount)}
                       </div>
