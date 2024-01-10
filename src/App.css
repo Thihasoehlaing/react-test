@@ -1,13 +1,13 @@
-.relative:hover .absolute {
+.play .relative:hover .absolute {
     opacity: 1;
 }
 
 /* Styling for the play button */
-.absolute button {
+.play .absolute button {
     display: none; /* Initially hidden */
 }
 
 /* Show the play button when its parent is hovered */
-.relative:hover .absolute button {
+.play .relative:hover .absolute button {
     display: block;
 }

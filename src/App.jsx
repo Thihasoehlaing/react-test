@@ -133,8 +133,8 @@ const App = () => {
                     className='w-full relative z-20'
                   >
                     {
-                      showGame?.jackpotAmount > 0 && 
-                      <div className='w-full absolute top-0 text-center text-white bg-[#80808040] rounded-t-xl'>
+                      showGame.jackpotAmount > 0 && 
+                      <div className='w-full absolute top-0 text-center text-white bg-[#80808040] rounded-t-xl z-10 py-1'>
                         {formatCurrency(showGame?.jackpotAmount)}
                       </div>
                     }
@@ -146,7 +146,7 @@ const App = () => {
                       showGame?.categories && showGame?.categories.length > 0 && isTop(showGame.categories) && 
                       <img src={topImg} className='absolute -bottom-[5px] w-[100px] z-10' />
                     }
-                    <div className='relative'>
+                    <div className='play relative'>
                       <img src={showGame?.image} alt={showGame?.name} className='rounded-xl z-0' />
                       <div className='play absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 bg-black bg-opacity-50 rounded-xl'>
                         <button 
