@@ -1,0 +1,40 @@
+{
+    "data":[
+        {
+            "label": "Top Games",
+            "value": "top"
+        },
+        {
+            "label": "New Games",
+            "value": "new"
+        },
+        {
+            "label": "Slots",
+            "value": "slots"
+        },
+        {
+            "label": "Jackpots",
+            "value": "jackpots"
+        },
+        {
+            "label": "Live",
+            "value": "classic"
+        },
+        {
+            "label": "Blackjack",
+            "value": "blackjack"
+        },
+        {
+            "label": "Roulette",
+            "value": "roulette"
+        },
+        {
+            "label": "Poker",
+            "value": "poker"
+        },
+        {
+            "label": "Other",
+            "value": "other"
+        }
+    ]
+}
