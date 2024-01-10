@@ -146,9 +146,9 @@ const App = () => {
                       showGame?.categories && showGame?.categories.length > 0 && isTop(showGame.categories) && 
                       <img src={topImg} className='absolute -bottom-[5px] w-[100px] z-10' />
                     }
-                    <div className='play relative'>
+                    <div className='relative'>
                       <img src={showGame?.image} alt={showGame?.name} className='rounded-xl z-0' />
-                      <div className='play absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 bg-black bg-opacity-50 rounded-xl'>
+                      <div className='absolute inset-0 md:pt-2.5 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 bg-black bg-opacity-50 rounded-xl'>
                         <button 
                           type="button"
                           className='bg-[#8DC63F] text-white text-xs md:text-sm py-2 md:py-4 px-2 md:px-4 rounded-full'
@@ -157,7 +157,7 @@ const App = () => {
                         >
                           Play
                         </button>
-                        <p className='w-full text-xs md:text-lg text-white mt-2 text-center capitalize'>
+                        <p className='w-full text-xs md:text-sm text-white mt-1 text-center capitalize'>
                           {showGame?.name}
                         </p>
                       </div>
